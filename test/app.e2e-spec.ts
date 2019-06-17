@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import * as request from 'supertest';
 import { AppModule } from './../src/app.module';
+import { doesNotReject, doesNotThrow } from 'assert';
 
 describe('AppController (e2e)', () => {
   let app;
@@ -18,6 +19,20 @@ describe('AppController (e2e)', () => {
     return request(app.getHttpServer())
       .get('/')
       .expect(200)
-      .expect('Hello World!');
+      // .expect('success!');
+      .then(response => {
+        expect(response.body).toMatchObject(/hello/);
+      })
+  });
+
+  it('/version (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/')
+      .expect(200)
+      .then(response => {
+        //console.log(response.body)
+        expect(response.body).toMatchObject(/version/);
+        expect(response.body).toMatchObject(/success/);
+      })
   });
 });

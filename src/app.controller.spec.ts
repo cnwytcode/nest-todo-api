@@ -14,9 +14,16 @@ describe('AppController', () => {
     appController = app.get<AppController>(AppController);
   });
 
-  describe('root', () => {
+  describe('root getHello: ', () => {
     it('should return "Hello World!"', () => {
       expect(appController.getHello()).toBe('Hello World!');
+    });
+  });
+
+  // 自定义一个测试用例 
+  describe('get /version: ', () => {
+    it('should 返回包含 "version" 字段: ', () => {
+      expect(appController.getVersion()).toMatchObject(/version/);
     });
   });
 });
