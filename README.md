@@ -11,6 +11,12 @@ nest-todo-api
 $ npm install
 ```
 
+修改数据库连接信息: 
+
+```
+$ vi ormconfig.json
+```
+
 ## Running the app
 
 ```bash

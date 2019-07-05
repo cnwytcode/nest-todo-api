@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Param, Delete, Put, Body, Request, Req, HttpException, HttpStatus, Res } from '@nestjs/common';
 import { TodoService } from './todo.service';
-import { ApiException } from '../../common/exceptions/api.exception';
 import { Todo } from '../../entity/todo.entity';
-import { ApiErrorCode } from '../../common/enums/api-error-code.enum';
+import { ApiException } from 'src/common/exceptions/api.exception';
+import { ApiErrorCode } from 'src/common/enums/api-error-code.enum';
 
 @Controller('todo')
 export class TodoController {
@@ -23,7 +23,7 @@ export class TodoController {
     console.warn(id)
     console.warn(isNaN(id))
     if(isNaN(id) || typeof id !== 'number' || id <= 0) {
-        throw new ApiException('用户ID错误', ApiErrorCode.INVALID_USER_ID, HttpStatus.OK);
+        // throw new ApiException('用户ID错误', ApiErrorCode.INVALID_USER_ID, HttpStatus.OK);
     }
     console.log("-->TodoController: findOne");
     console.log(params);

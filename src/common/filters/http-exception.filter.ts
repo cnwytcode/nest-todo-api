@@ -9,12 +9,10 @@ export class HttpExceptionFilter<T> implements ExceptionFilter {
     const request = ctx.getRequest();
     const status = exception.getStatus()
 
-    response
-      .status(status)
-      .json({
-        statusCode: status,
-        date: new Date().toLocaleDateString(),
-        path: request.url,
-      });
+    response.status(status).json({
+      statusCode: status,
+      date: new Date().toLocaleDateString(),
+      path: request.url,
+    });
   }
 }
