@@ -56,11 +56,10 @@ let TodoController = class TodoController {
     update(params, body) {
         console.log(`------ TodoController: update (#${params.id}) ------`);
         console.log(params);
-        console.log(body.title);
-        if (body.title == '' || typeof body.title == 'undefined') {
-            throw new api_exception_1.ApiException('参数错误:title', api_error_code_enum_1.ApiErrorCode.INVALID_USER_ID, common_1.HttpStatus.OK);
+        if (body.id == '' || typeof body.id == 'undefined') {
+            throw new api_exception_1.ApiException('参数错误:id', api_error_code_enum_1.ApiErrorCode.INVALID_ID, common_1.HttpStatus.OK);
         }
-        let res = this.todoService.update(body);
+        let res = this.todoService.update(params.id, body);
         return res;
     }
     remove(id) {

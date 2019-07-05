@@ -30,11 +30,11 @@ __decorate([
 ], Todo.prototype, "content", void 0);
 __decorate([
     typeorm_1.Column({ name: 'is_star', type: 'tinyint', unsigned: true, default: 0, comment: '是否星标' }),
-    __metadata("design:type", Boolean)
+    __metadata("design:type", Number)
 ], Todo.prototype, "isStar", void 0);
 __decorate([
     typeorm_1.Column({ name: 'is_finish', type: 'tinyint', unsigned: true, default: 0, comment: '是否已完成' }),
-    __metadata("design:type", Boolean)
+    __metadata("design:type", Number)
 ], Todo.prototype, "isFinish", void 0);
 __decorate([
     typeorm_1.Column({ name: 'create_time', type: 'int', unsigned: true, default: 0, comment: '添加时间' }),

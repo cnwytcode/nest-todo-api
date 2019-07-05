@@ -2106,23 +2106,23 @@
         "signature": "c3025e326137c1a60594f9e17d3509e7fb76037f795670b6a1c62c345f078eeb"
       },
       "/users/wangtom/development/node/nest-todo-api/src/entity/todo.entity.ts": {
-        "version": "02f8f102cfba00aa2f5c684b1f1e482bf0ff8540953c576c9af56af0174e1b97",
-        "signature": "7664fa7a539be5fed9ef306cea28d9079b155aa4eecb020100a23c84c8978cbc"
-      },
-      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts": {
-        "version": "0c8d3aee59342ad030c8daadec7d81bbc824f5d946fdb6f615ad9c4ae30d68da",
-        "signature": "3239c69a76ff1156ec30d1089d2a46ada55219f755c3301ea0f425c942dc81a2"
+        "version": "283918c715602786381affc228b8f205c6822a01bce4440526ca0b451e564c67",
+        "signature": "fe051f9511c35998b407b9453acdac07eeeffb1274f9256914d14ceb11b880d4"
       },
       "/users/wangtom/development/node/nest-todo-api/src/common/enums/api-error-code.enum.ts": {
-        "version": "ee5770c26509d6f99add295a22d9276b9d8c4587e45ad2a9ad842f7371ce99bf",
-        "signature": "53eebdb348eebe58596e03ee242e2a7d25cf919560a8d43b00a11be513d2c43c"
+        "version": "d4d4e9fe25fa3f9059d55dd74e9f9932778776d02c1be9c4d182f8b2f15a94aa",
+        "signature": "1b819638fcdfa0570053e180b5092a665f77b74fa1ab1d10f189663808a7e08c"
       },
       "/users/wangtom/development/node/nest-todo-api/src/common/exceptions/api.exception.ts": {
         "version": "894e10683e0632bfb96b174ebb8eb3c631eff537814414de5365a411f206ffe7",
         "signature": "59d2f3b08b06393359f9a01b4e765e87d376cba72738c110076fddc221d29f02"
       },
+      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts": {
+        "version": "e7c141cd07aee1db17c9bee1105dbbc8035e9ce1aa7547e3795e93985e07e1a8",
+        "signature": "b3a49d6bf84a17220d73ba7f87552ba75ee3d7a49ec787baa7bcbc0cf4772362"
+      },
       "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.controller.ts": {
-        "version": "7df7a1f688900229b4f50f547f2143bebcc185716a58545b3d73fd23c8248937",
+        "version": "48cf32bd5f24cc38ff3aef22f73c39cfa9b9456f794cf4b3f09c1462271560c0",
         "signature": "31c11cba272b5724028846f98dc1e21e0c8313ded71f873377eeec27da4b955e"
       },
       "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.module.ts": {
@@ -2661,8 +2661,12 @@
         "version": "8b144236aeff6cb71477fed41fd5cad1b12d3afa9b4831e8161fcee8bd32eeb4",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
+      "/users/wangtom/development/node/nest-todo-api/src/common/filters/http-exception.filter.ts": {
+        "version": "935e5831fb1c7759fd7951b1edef788fe1763e34a5f2e3ac34ee28b65e9e14e5",
+        "signature": "baf076f56aaf7ae4aeed751d5f71a4440bc52993714ed48926381f429b725bec"
+      },
       "/users/wangtom/development/node/nest-todo-api/src/main.ts": {
-        "version": "938f173c6c4883096c77cc12c79605c80e71d91663dbb676adf00b3fd565e00b",
+        "version": "6c0d58e014483604e2cd64fd6bd2b487ffd3b8016f32b4a40c93db993c12f837",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "/users/wangtom/development/node/nest-todo-api/src/entity/tags.entity.ts": {
@@ -6097,20 +6101,22 @@
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts": [
-        "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/common/index.d.ts",
-        "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/typeorm/index.d.ts",
-        "/users/wangtom/development/node/nest-todo-api/node_modules/typeorm/index.d.ts",
-        "/users/wangtom/development/node/nest-todo-api/src/entity/todo.entity.ts",
-        "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
-        "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/wangtom/development/node/nest-todo-api/src/common/enums/api-error-code.enum.ts": [
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/users/wangtom/development/node/nest-todo-api/src/common/exceptions/api.exception.ts": [
         "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/common/index.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/src/common/enums/api-error-code.enum.ts",
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts": [
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/common/index.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/typeorm/index.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/node_modules/typeorm/index.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/src/entity/todo.entity.ts",
+        "/users/wangtom/development/node/nest-todo-api/src/common/exceptions/api.exception.ts",
         "/users/wangtom/development/node/nest-todo-api/src/common/enums/api-error-code.enum.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
@@ -7025,9 +7031,15 @@
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/users/wangtom/development/node/nest-todo-api/src/common/filters/http-exception.filter.ts": [
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/common/index.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/users/wangtom/development/node/nest-todo-api/src/main.ts": [
         "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/core/index.d.ts",
         "/users/wangtom/development/node/nest-todo-api/src/app.module.ts",
+        "/users/wangtom/development/node/nest-todo-api/src/common/filters/http-exception.filter.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -10450,13 +10462,13 @@
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts": [
-        "/users/wangtom/development/node/nest-todo-api/node_modules/typeorm/index.d.ts",
-        "/users/wangtom/development/node/nest-todo-api/src/entity/todo.entity.ts"
-      ],
       "/users/wangtom/development/node/nest-todo-api/src/common/exceptions/api.exception.ts": [
         "/users/wangtom/development/node/nest-todo-api/src/common/enums/api-error-code.enum.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/common/index.d.ts"
+      ],
+      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts": [
+        "/users/wangtom/development/node/nest-todo-api/node_modules/typeorm/index.d.ts",
+        "/users/wangtom/development/node/nest-todo-api/src/entity/todo.entity.ts"
       ],
       "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.controller.ts": [
         "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts",
@@ -11340,6 +11352,9 @@
         "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/common/index.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/rxjs/index.d.ts"
       ],
+      "/users/wangtom/development/node/nest-todo-api/src/common/filters/http-exception.filter.ts": [
+        "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/common/index.d.ts"
+      ],
       "/users/wangtom/development/node/nest-todo-api/node_modules/@babel/types/lib/index.d.ts": [
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/util.d.ts",
         "/users/wangtom/development/node/nest-todo-api/node_modules/@types/node/ts3.2/util.d.ts"
@@ -11952,9 +11967,9 @@
       "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/typeorm/index.d.ts",
       "/users/wangtom/development/node/nest-todo-api/src/entity/user.entity.ts",
       "/users/wangtom/development/node/nest-todo-api/src/entity/todo.entity.ts",
-      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts",
       "/users/wangtom/development/node/nest-todo-api/src/common/enums/api-error-code.enum.ts",
       "/users/wangtom/development/node/nest-todo-api/src/common/exceptions/api.exception.ts",
+      "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.service.ts",
       "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.controller.ts",
       "/users/wangtom/development/node/nest-todo-api/src/modules/todo/todo.module.ts",
       "/users/wangtom/development/node/nest-todo-api/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -12090,7 +12105,8 @@
       "/users/wangtom/development/node/nest-todo-api/node_modules/rxjs/operators/index.d.ts",
       "/users/wangtom/development/node/nest-todo-api/src/common/interceptors/timeout.interceptor.ts",
       "/users/wangtom/development/node/nest-todo-api/src/app.module.ts",
-      "/users/wangtom/development/node/nest-todo-api/src/main.ts",
+      "/users/wangtom/development/node/nest-todo-api/src/common/filters/http-exception.filter.ts",
+      "/users/wangtom/development/node/nest-todo-api/src/entity/tags.entity.ts",
       "/users/wangtom/development/node/nest-todo-api/node_modules/@babel/types/lib/index.d.ts",
       "/users/wangtom/development/node/nest-todo-api/node_modules/@types/babel__generator/index.d.ts",
       "/users/wangtom/development/node/nest-todo-api/node_modules/@types/babel__traverse/index.d.ts",
@@ -12107,7 +12123,7 @@
       "/users/wangtom/development/node/nest-todo-api/node_modules/@types/superagent/index.d.ts",
       "/users/wangtom/development/node/nest-todo-api/node_modules/@types/supertest/index.d.ts",
       "/users/wangtom/development/node/nest-todo-api/node_modules/@types/yargs/index.d.ts",
-      "/users/wangtom/development/node/nest-todo-api/src/entity/tags.entity.ts"
+      "/users/wangtom/development/node/nest-todo-api/src/main.ts"
     ]
   },
   "version": "3.4.3"

@@ -24,6 +24,8 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const todo_entity_1 = require("../../entity/todo.entity");
+const api_exception_1 = require("src/common/exceptions/api.exception");
+const api_error_code_enum_1 = require("src/common/enums/api-error-code.enum");
 let TodoService = class TodoService {
     constructor(todoRepository) {
         this.todoRepository = todoRepository;
@@ -39,7 +41,7 @@ let TodoService = class TodoService {
             let todo = new todo_entity_1.Todo();
             todo.title = params.title;
             todo.content = params.content ? params.content : '';
-            todo.createTime = new Date().getTime() / 1000;
+            todo.createTime = Math.round(new Date().getTime() / 1000);
             todo.userId = params.userId ? params.userId : '10010';
             console.log(todo);
             return this.todoRepository.save(todo)
@@ -55,14 +57,37 @@ let TodoService = class TodoService {
             });
         });
     }
-    update(params) {
+    update(id, params) {
         return __awaiter(this, void 0, void 0, function* () {
-            let todo = new todo_entity_1.Todo();
-            todo.id = params.id;
-            todo.title = params.title;
-            todo.content = params.content ? params.content : '';
-            todo.createTime = new Date().getTime() / 1000;
-            todo.userId = params.userId ? params.userId : '10010';
+            let todoModel = new todo_entity_1.Todo();
+            todoModel.id = params.id;
+            const todo = yield this.todoRepository.findOne(todoModel);
+            console.log('---------------->:');
+            console.log(todo);
+            console.log(params.isStar);
+            if (typeof todo == 'undefined') {
+                throw new api_exception_1.ApiException('数据不存在', api_error_code_enum_1.ApiErrorCode.NOT_FOUND);
+            }
+            if (params.isStar) {
+                console.log('------isStaryes---------->:');
+            }
+            else {
+                console.log('--------isStar-no------->:');
+            }
+            return;
+            if (params.title) {
+                todo.title = params.title;
+            }
+            if (params.content) {
+                todo.content = params.content ? params.content : '';
+            }
+            if (params.isStar) {
+                todo.isStar = params.isStar;
+            }
+            if (params.isFinish) {
+                todo.isFinish = params.isFinish;
+            }
+            todo.updateTime = Math.round(new Date().getTime() / 1000);
             console.log(todo);
             return this.todoRepository.save(todo).then(res => {
                 console.log('---->res:');
@@ -77,14 +102,14 @@ let TodoService = class TodoService {
     }
     findOneById(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.todoRepository.findOne({
+            return yield this.todoRepository.findOneOrFail({
                 id: id
             }).then(res => {
-                console.log('---->res:');
+                console.log('---->findOneById res:');
                 console.log(res);
                 return res;
             }).catch(err => {
-                console.log('---->error:');
+                console.log('---->findOneById error:');
                 console.log(err);
                 return err;
             });

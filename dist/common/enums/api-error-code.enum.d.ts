@@ -1,8 +1,10 @@
 export declare enum ApiErrorCode {
     TIMEOUT = -1,
     SUCCESS = 200,
+    INVALID_ID = 10000,
     INVALID_USER_ID = 10001,
     INVALID_POST_ID = 10002,
+    NOT_FOUND = 10404,
     INVALID_PARAM = 10001,
     INVALID_CREDENTIAL = 40001,
     TOKEN_MISSING = 41001,

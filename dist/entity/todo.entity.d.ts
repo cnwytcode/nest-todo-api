@@ -3,8 +3,8 @@ export declare class Todo {
     userId: number;
     title: string;
     content: string;
-    isStar: boolean;
-    isFinish: boolean;
+    isStar: number;
+    isFinish: number;
     createTime: number;
     updateTime: number;
 }

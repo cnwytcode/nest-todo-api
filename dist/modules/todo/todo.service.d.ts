@@ -5,6 +5,6 @@ export declare class TodoService {
     constructor(todoRepository: Repository<Todo>);
     findAll(params: any): Promise<Todo[]>;
     create(params: any): Promise<string>;
-    update(params: any): Promise<string>;
+    update(id: number, params: any): Promise<string>;
     findOneById(id: number): Promise<Todo>;
 }

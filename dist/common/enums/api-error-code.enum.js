@@ -4,8 +4,10 @@ var ApiErrorCode;
 (function (ApiErrorCode) {
     ApiErrorCode[ApiErrorCode["TIMEOUT"] = -1] = "TIMEOUT";
     ApiErrorCode[ApiErrorCode["SUCCESS"] = 200] = "SUCCESS";
+    ApiErrorCode[ApiErrorCode["INVALID_ID"] = 10000] = "INVALID_ID";
     ApiErrorCode[ApiErrorCode["INVALID_USER_ID"] = 10001] = "INVALID_USER_ID";
     ApiErrorCode[ApiErrorCode["INVALID_POST_ID"] = 10002] = "INVALID_POST_ID";
+    ApiErrorCode[ApiErrorCode["NOT_FOUND"] = 10404] = "NOT_FOUND";
     ApiErrorCode[ApiErrorCode["INVALID_PARAM"] = 10001] = "INVALID_PARAM";
     ApiErrorCode[ApiErrorCode["INVALID_CREDENTIAL"] = 40001] = "INVALID_CREDENTIAL";
     ApiErrorCode[ApiErrorCode["TOKEN_MISSING"] = 41001] = "TOKEN_MISSING";
